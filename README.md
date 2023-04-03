@@ -1,76 +1,82 @@
-# Chrome Extension Boilerplate with Manifest 3
-This is a basic boilerplate for creating a Chrome Extension with Manifest 3. It includes the necessary files and folder structure to get started quickly.
+# Opus Alchemy
 
-## Folder Structure
-The folder structure is as follows:
+![Opus Alchemy Logo](./extension/icons/icon.png)
+
+Opus Alchemy is a free, open-source browser extension that automatically converts XHR and OPUS audio stream media types to MP3 for easy downloading on the cybrary.it platform.
+
+---
+
+**Disclaimer**: Opus Alchemy is provided for educational and non-commercial purposes only. Please respect the terms of service and intellectual property rights of the platforms you use this extension with. The developers of Opus Alchemy are not responsible for any actions taken by users of this extension.
+
+---
+
+## Features
+
+- Activates when connected to the cybrary.it domain
+- Listens for requests containing specific parameters
+- Modifies requests to fetch the full video
+- Provides a convenient download button
+
+## Installation
+
+1. Clone this repository to your local machine.
+2. Open the Chrome browser and navigate to `chrome://extensions/`.
+3. Enable "Developer mode" in the top-right corner of the extensions page.
+4. Click "Load unpacked" and select the `extension` folder in the cloned repository.
+
+## Usage
+
+1. Navigate to a video on the cybrary.it platform.
+2. Click the Opus Alchemy extension icon in the browser toolbar.
+3. Press the "Convert XHR (OPUS) to MP3!" button.
+4. The extension will listen for requests and provide a download link for the converted video.
+
+## Project Structure
 
 ```
-my-extension/
-├── extension/
-│   ├── background.js
-│   ├── content.js
-│   ├── icons/
-│   │   ├── icon16.png
-│   │   ├── icon32.png
-│   │   ├── icon48.png
-│   │   └── icon128.png
-│   ├── popup/
-│   │   ├── popup.html
-│   │   └── popup.js
-│   └── manifest.json
-├── src/
-│   └── // source files for the extension
-├── webpack.config.js
-├── babel.config.js
-├── package.json
-└── node_modules/
-    └── // dependencies installed by npm
-
+.
+│   .babelrc
+│   .gitignore
+│   package-lock.json
+│   package.json
+│   README.md
+│   webpack.config.js
+│
+├───.vs
+│   │   ProjectSettings.json
+│   │   slnx.sqlite
+│   │   VSWorkspaceState.json
+│   │
+│   └───opus-alchemy
+│       └───v16
+├───extension
+│   │   background.js
+│   │   content.js
+│   │   content.js.map
+│   │   manifest.json
+│   │
+│   ├───icons
+│   │       icon-t.png
+│   │       icon.png
+│   │       icon.svg
+│   │       logo-popup.png
+│   │
+│   └───popup
+│           popup.html
+│
+└───src
+        index.js
 ```
 
-## Getting Started
-To use this boilerplate, follow these steps:
+## Contributing
 
-- Clone the repository or download the ZIP file.
-- Edit manifest.json file to add the required information about the extension.
-- Customize popup.html as per your needs.
-- Add your own JavaScript code in src/index.js.
-- Load the extension in Chrome by navigating to chrome://extensions, enabling "Developer mode" in the top right corner, and then clicking on "Load unpacked" and selecting the folder that contains the extension files.
+We welcome contributions to improve and expand the functionality of Opus Alchemy. Please submit a pull request with your proposed changes, and make sure to follow the existing code style and structure.
 
-### Manifest.json
-The manifest.json file is the main configuration file for the extension. It contains information such as the extension's name, version, description, icons, permissions, and background scripts.
+## License
 
-Make sure to update the fields in manifest.json with the appropriate values for your extension.
-
-### Popup.html
-The popup.html file is the HTML file for the extension's popup window. You can customize this file as per your needs, adding any HTML, CSS, or JavaScript code required.
-
-### JavaScript and CSS
-The js/script.js file is where you can add your own JavaScript code. Similarly, the css/style.css file is where you can add your own CSS styles.
-
-## Webpack
-
-This boilerplate also includes Webpack, a popular module bundler for JavaScript applications. Webpack is used to bundle all the JavaScript code and dependencies into a single file, making it easier to manage and deploy the code.
-
-In this boilerplate, Webpack is configured to take src/index.js as the entry point and output the bundle to content.js. This means that all the JavaScript code written in src/index.js as well as any dependencies imported into that file will be bundled together into a single file called content.js.
-
-By using Webpack, you can take advantage of its features such as code splitting, hot module replacement, and tree shaking to optimize your code and improve the performance of your extension.
-
-To configure Webpack for your own needs, you can edit the webpack.config.js file included in this boilerplate. You can customize the entry point, output file name, and various other settings to suit your specific requirements.
-
-## NPM Scripts
-
-This boilerplate also includes a set of npm scripts that you can use to build and manage your extension. The following scripts are available:
-
-- `npm run build-dev`: Builds the extension in development mode, using Webpack's development settings.
-- `npm run build-prod`: Builds the extension in production mode, using Webpack's production settings for code optimization and minification.
-- `npm run clean`: Removes the content.js file. All the other files of the extension are not removed.
-- `npm run watch`: Starts a Webpack watch process, automatically rebuilding the extension whenever changes are made to the source files.
-
-These scripts provide a convenient way to build and manage your extension, and can be customized to suit your specific needs. You can also add your own scripts to the package.json file to automate other tasks related to your extension development.
+Opus Alchemy is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 
-## Conclusion
-This boilerplate provides a basic structure for creating a Chrome Extension with Manifest 3. It includes the necessary files and folder structure to get started quickly, and you can customize it as per your needs.
+---
 
-
+**Disclaimer (Yes Again)**: Opus Alchemy is provided for educational and non-commercial purposes only. Please respect the terms of service and intellectual property rights of the platforms you use this extension with. The developers of Opus Alchemy are not responsible for any actions taken by users of this extension.
