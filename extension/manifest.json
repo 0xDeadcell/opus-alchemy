@@ -28,5 +28,12 @@
       "matches": ["*://app.cybrary.it/*"],
       "run_at": "document_end"
     }
+  ],
+  "permissions": [
+    "webRequest",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ]
 }
