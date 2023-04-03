@@ -2,6 +2,9 @@
 
 ![Opus Alchemy Logo](./extension/icons/icon.png)
 
+- In Progress! Please wait for the first major release before downloading/cloning this repo
+
+
 Opus Alchemy is a free, open-source browser extension that automatically converts XHR and OPUS audio stream media types to MP3 for easy downloading on the cybrary.it platform.
 
 ---
