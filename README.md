@@ -12,7 +12,7 @@ Opus Alchemy is a free, open-source browser extension that automatically convert
 
 ## Features
 
-- Activates when connected to the cybrary.it domain
+- Activates when connected to a domain playing video
 - Listens for requests containing specific parameters
 - Modifies requests to fetch the full video
 - Provides a convenient download button
@@ -26,7 +26,7 @@ Opus Alchemy is a free, open-source browser extension that automatically convert
 
 ## Usage
 
-1. Navigate to a video on the cybrary.it platform.
+1. Navigate to a video and play it.
 2. Click the Opus Alchemy extension icon in the browser toolbar.
 3. Press the "Convert XHR (OPUS) to MP3!" button.
 4. The extension will listen for requests and provide a download link for the converted video.
